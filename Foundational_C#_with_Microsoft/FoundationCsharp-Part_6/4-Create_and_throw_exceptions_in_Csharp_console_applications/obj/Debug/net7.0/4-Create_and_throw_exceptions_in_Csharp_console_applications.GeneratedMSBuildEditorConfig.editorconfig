@@ -1,0 +1,11 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = _4_Create_and_throw_exceptions_in_Csharp_console_applications
+build_property.ProjectDir = /mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_6/4-Create_and_throw_exceptions_in_Csharp_console_applications/

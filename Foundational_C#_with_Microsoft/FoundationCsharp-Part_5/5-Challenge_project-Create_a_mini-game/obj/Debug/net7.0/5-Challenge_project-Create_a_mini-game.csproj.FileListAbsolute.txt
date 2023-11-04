@@ -1,0 +1,15 @@
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/5-Challenge_project-Create_a_mini-game/obj/Debug/net7.0/5-Challenge_project-Create_a_mini-game.csproj.AssemblyReference.cache
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/5-Challenge_project-Create_a_mini-game/obj/Debug/net7.0/5-Challenge_project-Create_a_mini-game.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/5-Challenge_project-Create_a_mini-game/obj/Debug/net7.0/5-Challenge_project-Create_a_mini-game.AssemblyInfoInputs.cache
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/5-Challenge_project-Create_a_mini-game/obj/Debug/net7.0/5-Challenge_project-Create_a_mini-game.AssemblyInfo.cs
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/5-Challenge_project-Create_a_mini-game/obj/Debug/net7.0/5-Challenge_project-Create_a_mini-game.csproj.CoreCompileInputs.cache
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/5-Challenge_project-Create_a_mini-game/bin/Debug/net7.0/5-Challenge_project-Create_a_mini-game
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/5-Challenge_project-Create_a_mini-game/bin/Debug/net7.0/5-Challenge_project-Create_a_mini-game.deps.json
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/5-Challenge_project-Create_a_mini-game/bin/Debug/net7.0/5-Challenge_project-Create_a_mini-game.runtimeconfig.json
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/5-Challenge_project-Create_a_mini-game/bin/Debug/net7.0/5-Challenge_project-Create_a_mini-game.dll
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/5-Challenge_project-Create_a_mini-game/bin/Debug/net7.0/5-Challenge_project-Create_a_mini-game.pdb
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/5-Challenge_project-Create_a_mini-game/obj/Debug/net7.0/5-Challenge_project-Create_a_mini-game.dll
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/5-Challenge_project-Create_a_mini-game/obj/Debug/net7.0/refint/5-Challenge_project-Create_a_mini-game.dll
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/5-Challenge_project-Create_a_mini-game/obj/Debug/net7.0/5-Challenge_project-Create_a_mini-game.pdb
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/5-Challenge_project-Create_a_mini-game/obj/Debug/net7.0/5-Challenge_project-Create_a_mini-game.genruntimeconfig.cache
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/5-Challenge_project-Create_a_mini-game/obj/Debug/net7.0/ref/5-Challenge_project-Create_a_mini-game.dll

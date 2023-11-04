@@ -1,0 +1,14 @@
+D:\Projects\C-Sharp_folder\FoundationCsharp-Part_3\3-Branch_the_flow_of_code_using_the_switch-case_construct_in_Csharp\bin\Debug\net7.0\CsharpProjects.exe
+D:\Projects\C-Sharp_folder\FoundationCsharp-Part_3\3-Branch_the_flow_of_code_using_the_switch-case_construct_in_Csharp\bin\Debug\net7.0\CsharpProjects.deps.json
+D:\Projects\C-Sharp_folder\FoundationCsharp-Part_3\3-Branch_the_flow_of_code_using_the_switch-case_construct_in_Csharp\bin\Debug\net7.0\CsharpProjects.runtimeconfig.json
+D:\Projects\C-Sharp_folder\FoundationCsharp-Part_3\3-Branch_the_flow_of_code_using_the_switch-case_construct_in_Csharp\bin\Debug\net7.0\CsharpProjects.dll
+D:\Projects\C-Sharp_folder\FoundationCsharp-Part_3\3-Branch_the_flow_of_code_using_the_switch-case_construct_in_Csharp\bin\Debug\net7.0\CsharpProjects.pdb
+D:\Projects\C-Sharp_folder\FoundationCsharp-Part_3\3-Branch_the_flow_of_code_using_the_switch-case_construct_in_Csharp\obj\Debug\net7.0\CsharpProjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\C-Sharp_folder\FoundationCsharp-Part_3\3-Branch_the_flow_of_code_using_the_switch-case_construct_in_Csharp\obj\Debug\net7.0\CsharpProjects.AssemblyInfoInputs.cache
+D:\Projects\C-Sharp_folder\FoundationCsharp-Part_3\3-Branch_the_flow_of_code_using_the_switch-case_construct_in_Csharp\obj\Debug\net7.0\CsharpProjects.AssemblyInfo.cs
+D:\Projects\C-Sharp_folder\FoundationCsharp-Part_3\3-Branch_the_flow_of_code_using_the_switch-case_construct_in_Csharp\obj\Debug\net7.0\CsharpProjects.csproj.CoreCompileInputs.cache
+D:\Projects\C-Sharp_folder\FoundationCsharp-Part_3\3-Branch_the_flow_of_code_using_the_switch-case_construct_in_Csharp\obj\Debug\net7.0\CsharpProjects.dll
+D:\Projects\C-Sharp_folder\FoundationCsharp-Part_3\3-Branch_the_flow_of_code_using_the_switch-case_construct_in_Csharp\obj\Debug\net7.0\refint\CsharpProjects.dll
+D:\Projects\C-Sharp_folder\FoundationCsharp-Part_3\3-Branch_the_flow_of_code_using_the_switch-case_construct_in_Csharp\obj\Debug\net7.0\CsharpProjects.pdb
+D:\Projects\C-Sharp_folder\FoundationCsharp-Part_3\3-Branch_the_flow_of_code_using_the_switch-case_construct_in_Csharp\obj\Debug\net7.0\CsharpProjects.genruntimeconfig.cache
+D:\Projects\C-Sharp_folder\FoundationCsharp-Part_3\3-Branch_the_flow_of_code_using_the_switch-case_construct_in_Csharp\obj\Debug\net7.0\ref\CsharpProjects.dll

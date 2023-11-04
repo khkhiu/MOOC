@@ -1,0 +1,15 @@
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/2-Create_Csharp_methods_with_parameters/bin/Debug/net7.0/2-Create_Csharp_methods_with_parameters
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/2-Create_Csharp_methods_with_parameters/bin/Debug/net7.0/2-Create_Csharp_methods_with_parameters.deps.json
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/2-Create_Csharp_methods_with_parameters/bin/Debug/net7.0/2-Create_Csharp_methods_with_parameters.runtimeconfig.json
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/2-Create_Csharp_methods_with_parameters/bin/Debug/net7.0/2-Create_Csharp_methods_with_parameters.dll
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/2-Create_Csharp_methods_with_parameters/bin/Debug/net7.0/2-Create_Csharp_methods_with_parameters.pdb
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/2-Create_Csharp_methods_with_parameters/obj/Debug/net7.0/2-Create_Csharp_methods_with_parameters.csproj.AssemblyReference.cache
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/2-Create_Csharp_methods_with_parameters/obj/Debug/net7.0/2-Create_Csharp_methods_with_parameters.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/2-Create_Csharp_methods_with_parameters/obj/Debug/net7.0/2-Create_Csharp_methods_with_parameters.AssemblyInfoInputs.cache
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/2-Create_Csharp_methods_with_parameters/obj/Debug/net7.0/2-Create_Csharp_methods_with_parameters.AssemblyInfo.cs
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/2-Create_Csharp_methods_with_parameters/obj/Debug/net7.0/2-Create_Csharp_methods_with_parameters.csproj.CoreCompileInputs.cache
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/2-Create_Csharp_methods_with_parameters/obj/Debug/net7.0/2-Create_Csharp_methods_with_parameters.dll
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/2-Create_Csharp_methods_with_parameters/obj/Debug/net7.0/refint/2-Create_Csharp_methods_with_parameters.dll
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/2-Create_Csharp_methods_with_parameters/obj/Debug/net7.0/2-Create_Csharp_methods_with_parameters.pdb
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/2-Create_Csharp_methods_with_parameters/obj/Debug/net7.0/2-Create_Csharp_methods_with_parameters.genruntimeconfig.cache
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/2-Create_Csharp_methods_with_parameters/obj/Debug/net7.0/ref/2-Create_Csharp_methods_with_parameters.dll
