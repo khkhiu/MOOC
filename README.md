@@ -12,5 +12,8 @@ This course is jointly administered by FreeCodeCamp and Microsoft, offerring a c
 
 Through hands-on exercises and projects, student will learn the fundamentals of C#, including variables, data types, control structures, and object-oriented programming principles. By the end of this course, students will have gained the practical skills and knowledge needed to confidently leverage C# for building applications.
 
+## [Java Programming](https://github.com/khkhiu/MOOC/tree/main/Java_Programming)
+University of Helsinki's Java programming MOOC. The course aims to teach students the basics of computer programming, algorithms and object-oriented programming using the Java programming language. 
+
 ## [Securing Software](https://github.com/khkhiu/MOOC/tree/main/Cybersecurity_Base)
 University of Helsinki's Cyber Security Base MOOC, specifically the 'Securing Software' section.'Securing Software' focuses on security issues related to interconnected software. The participant will learn the principles of developing web applications, typical security issues that are related to such applications, and how such issues are discovered and mitigated.
