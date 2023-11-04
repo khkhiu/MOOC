@@ -1,0 +1,21 @@
+# Start from Ubuntu image
+FROM ubuntu:18.04
+
+# Use /usr/src/app as our workdir. The following instructions will be executed in this location.
+WORKDIR /mydir
+
+#Update and install curl, install 'youtube-dl'
+RUN apt-get update && apt-get install -y curl python
+RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+
+#Add execution permissions during the build.
+RUN chmod +x /usr/local/bin/youtube-dl
+
+#Store environmental variables
+ENV LC_ALL=C.UTF-8
+
+# Replacing CMD with ENTRYPOINT
+ENTRYPOINT ["/usr/local/bin/youtube-dl"]
+
+# define a default argument
+CMD ["https://imgur.com/gallery/xwJgflf"]

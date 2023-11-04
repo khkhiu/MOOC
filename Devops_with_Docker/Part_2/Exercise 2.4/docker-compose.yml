@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+    backend: 
+        container_name: backend
+        image: backend
+        build: ./backend
+        ports: 
+            - 8080:8080
+        environment:
+            REDIS_HOST: redis
+        depends_on:
+            - redis   
+
+    frontend:
+        container_name: frontend
+        image: frontend
+        build: ./frontend
+        ports:
+            - 5000:5000
+        depends_on:
+            - backend            
+ 
+    redis:
+        image: redis
+        container_name: redis-cache
+        restart: unless-stopped 

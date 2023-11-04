@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+
+    logger:
+        image: devopsdockeruh/simple-web-service
+        build: .
+        volumes: 
+            - ./log:/usr/src/app/text.log
+        container_name: log_container

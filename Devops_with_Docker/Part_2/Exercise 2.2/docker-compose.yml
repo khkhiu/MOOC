@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+
+    web:
+        image: devopsdockeruh/simple-web-service
+        build: .
+        ports: 
+            - 8080:8080         
+        command: server            
+        volumes: 
+            - ./log:/usr/src/app/text.log
+        container_name: web_container

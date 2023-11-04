@@ -1,0 +1,37 @@
+#RUN in: material-applications-main\example-backend
+
+#Use Ubuntu
+FROM ubuntu:22.10
+
+#use port 8080
+EXPOSE 8080
+
+#Use ENV to connect to frontend port
+ENV REQUEST_ORIGIN http://localhost:5000
+
+#Copy the src
+COPY . /usr/src/myapp
+
+#Use /usr/src/app as our workdir.
+WORKDIR /usr/src/myapp
+
+#Update Ubuntu
+RUN apt-get -y update
+
+#Install wget and download GO
+RUN apt-get -y install wget gcc && \
+    wget -c https://golang.org/dl/go1.16.3.linux-amd64.tar.gz && \
+    tar -C /usr/local -xzf go1.16.3.linux-amd64.tar.gz && \
+    rm go1.16.3.linux-amd64.tar.gz
+
+#Set environmental path
+ENV PATH /usr/local/go/bin:$PATH
+
+#Build
+RUN go build
+
+#Test
+RUN go test
+
+#Command to run
+CMD ./server

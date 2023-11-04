@@ -1,0 +1,5 @@
+# Start from alpine image 
+FROM devopsdockeruh/simple-web-service:alpine
+
+# Using CMD to run 'server'
+CMD server

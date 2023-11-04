@@ -1,0 +1,19 @@
+#RUN in: material-applications-main\spring-example-project
+
+# use OpenJDK
+FROM openjdk:11
+
+#Use port 8080
+EXPOSE 8080
+
+# Copy the src
+COPY . /usr/src/myapp
+
+# Use /usr/src/app as our workdir.
+WORKDIR /usr/src/myapp
+
+# Install all dependencies
+RUN ./mvnw package
+
+# And finally the command to run the application
+CMD ["java", "-jar", "./target/docker-example-1.1.3.jar"]

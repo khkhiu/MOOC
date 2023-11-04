@@ -1,0 +1,5 @@
+(Using Windows Subsystem for Linux)
+
+touch /tmp/log.txt
+
+docker run -v ${pwd}/tmp/log.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercise
