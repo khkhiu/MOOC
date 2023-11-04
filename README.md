@@ -12,6 +12,9 @@ This course is jointly administered by FreeCodeCamp and Microsoft, offerring a c
 
 Through hands-on exercises and projects, student will learn the fundamentals of C#, including variables, data types, control structures, and object-oriented programming principles. By the end of this course, students will have gained the practical skills and knowledge needed to confidently leverage C# for building applications.
 
+## [Full-Stack Open](https://github.com/khkhiu/MOOC/tree/main/Full-Stack-Open) 
+Repository for University of Helsinki's Full Stack Open MOOC. This course introduces students to modern JavaScript-based web development, with a focus on building Single-Page Applications(SPAs) with ReactJS using REST APIs built with Node.js. Other technologies introduced in the course includes:Redux, MongoDB, GraphQL, TypeScript, React Native, GitHub Actions and Docker.
+
 ## [Java Programming](https://github.com/khkhiu/MOOC/tree/main/Java_Programming)
 University of Helsinki's Java programming MOOC. The course aims to teach students the basics of computer programming, algorithms and object-oriented programming using the Java programming language. 
 
