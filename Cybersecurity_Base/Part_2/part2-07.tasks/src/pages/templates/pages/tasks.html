@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <title>Tasks</title>
+    </head>
+    <body>
+
+        <h2>Tasks</h2>
+
+        <!-- TODO: add the ability to list tasks -->
+        <ul id="tasks">
+        </ul>
+
+
+        <form>
+            <input type="text" name="name" id="name"/>
+            <input type="button" onclick="addTask();" value="Add!"/>
+        </form>
+
+        <!-- the javascript has been embedded to the same site -->
+        <script inline="javascript">
+            // The URL to the application server that holds the tasks.
+            var url = null;
+            
+            // WRITE LOADING CODE HERE 
+            function loadTasks() {
+                //The XMLHttpRequest object is created to handle the HTTP request.
+                var http = new XMLHttpRequest();
+                //An event handler is assigned to the onreadystatechange property of the XMLHttpRequest object. 
+                //This handler is called whenever the state of the HTTP request changes.
+                http.onreadystatechange = function () {
+                    //Inside the event handler, it checks if the request is complete (http.readyState === 4) 
+                    //and if the response status is 200, indicating a successful response.
+                    if (http.readyState === 4 && http.status === 200) {
+                        //If the response is successful, the code parses the response text as JSON and accesses the tasks property.
+                        tasks = JSON.parse(http.responseText).tasks
+                        //A for loop iterates over the tasks array and calls the addTaskToList() function for each task.
+                        for (let i = 0; i < tasks.length; i++) {
+                            addTaskToList(tasks[i])
+                        }
+                    }
+                }
+                //The open() method is called on the XMLHttpRequest object to initialize the request. 
+                //It specifies the HTTP method as "GET", the URL as 'tasks', and the asynchronous flag as true.
+                http.open("GET", 'tasks', true);
+                //Finally, the send() method is called on the XMLHttpRequest object to send the HTTP request to the server. 
+                //Since this is a GET request, the argument is set to null as there is no request body needed.
+                http.send(null);
+            }
+		</script>
+
+        <script inline="javascript">
+            function addTask() {
+                var name = document.querySelector("#name").value;
+                if (!name) {
+                    return;
+                }
+
+                console.log(name);
+
+                var http = new XMLHttpRequest();
+
+				// We are not using any CSRF protection(!) this should not be done in production
+                http.open("POST", 'add', true);
+                http.setRequestHeader("Content-type", "application/json");
+                var data = new Object();
+                data.name = name;
+
+                http.onreadystatechange = function () {
+                    if (http.readyState === 4) {
+                        if (http.status === 200) {
+                            addTaskToList(JSON.parse(http.responseText));
+                        }
+                    }
+                }
+
+                http.send(JSON.stringify(data));
+            }
+
+
+            function addTaskToList(task) {
+                var liElement = document.createElement("li");
+                liElement.appendChild(document.createTextNode(task.name));
+                document.querySelector("#tasks").appendChild(liElement);
+            }
+
+
+            window.onload = function () {
+                loadTasks();
+            };
+        </script>
+    </body>
+</html>
