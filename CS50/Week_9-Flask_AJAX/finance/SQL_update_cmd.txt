@@ -1,0 +1,12 @@
+sqlite3 finance.db
+
+CREATE TABLE portfolio 
+(
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	user_id INTEGER NOT NULL,
+	symbol TEXT NOT NULL,
+	shares INTEGER NOT NULL,
+	price NUMVERIC NOT NULL,
+	time DATETIME DEFAULT CURRENT_TIMESTAMP,
+	FOREIGN KEY (user_id) REFERENCES users(id)
+);

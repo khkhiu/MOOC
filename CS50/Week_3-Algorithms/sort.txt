@@ -1,0 +1,60 @@
+sort1 uses: Bubble sort
+
+How do you know?:
+Bubble sort has a time complexity of O(n²) — Ω(n).
+-It has the slowest random sort times as the algorithm has to go through all elements n² times.
+-It also has the slowest reversed sort time as as all elements have to be moved, resulting in large amounts of sort movement.
+-It has the fastest time when ran on sorted data it only has to examine each element once.
+
+sort2 uses: Merge sort
+
+How do you know?:
+Merge sort has a time complexity of Θ(n log n).
+-The use of recursion breaks down large data sets into smaller, more easily sorted data sets. This allows merge sort to have the fateset time when ran against random and reversed elements.
+-Merge sorts still examines elements in a data set (n log n) times. Making it slower than bubble sort, but still faster than selection sort.
+
+sort3 uses: Selection sort
+
+How do you know?:
+Selection sort has a time complexity of Θ(n²).
+-Selection sort allows the sorting of random elements faster than bubble sort, but slower than merge sort.
+-Similarly selection sort allows the sorting of reversed elements faster than bubble sort, but slower than merge sort.
+-It has the slowest time when ran on sorted data it only has to examine each element (n²) times.
+
+TESTING RESULTS:
+
+CMD used: time ./sort(X) (X).txt
+NOTE: Real refers to actual elapsed time; User and Sys refer to CPU time used only by the process.
+
+sort1:
+random5000      = 0.104s
+random10000     = 0.325s
+random50000     = 7.550s
+reversed5000    = 0.125s
+reversed10000   = 0.296s
+reversed50000   = 5.852s
+sorted5000      = 0.045s
+sorted10000     = 0.051s
+sorted50000     = 0.311s
+
+sort2:
+random5000      = 0.022s
+random10000     = 0.057s
+random50000     = 0.392s
+reversed5000    = 0.030s
+reversed10000   = 0.062s
+reversed50000   = 0.320s
+sorted5000      = 0.037s
+sorted10000     = 0.075s
+sorted50000     = 0.479s
+
+sort3:
+random5000      = 0.066s
+random10000     = 0.165s
+random50000     = 3.214s
+reversed5000    = 0.073s
+reversed10000   = 0.184s
+reversed50000   = 3.244s
+sorted5000      = 0.080s
+sorted10000     = 0.181s
+sorted50000     = 3.167s
