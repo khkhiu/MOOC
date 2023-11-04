@@ -3,7 +3,7 @@
 **Link to the CS50 Final project**
 <cite><a href="https://github.com/khkhiu/Pong">CS50 final project: Pong game</a></cite>
 
-![CS50_cert](ttps://github.com/khkhiu/MOOC/tree/main/CS50/CS50x.png)
+![CS50_cert](https://github.com/khkhiu/MOOC/blob/main/CS50/CS50x.png)
 <em>[CS50 certificate link](https://cs50.harvard.edu/certificates/d2c29fb2-0cb4-4785-b3c0-28bafab2b4a2)</em>
 ***
 
