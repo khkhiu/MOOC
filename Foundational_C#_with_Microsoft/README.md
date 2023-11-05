@@ -7,5 +7,5 @@ This repository will contian my solutions to the various challenges posed by the
 
 # Apendix
 ## Foundational C# with Microsoft certificate
-![Foundational C# with Microsoft certificate](https://github.com/khkhiu/C-Sharp_Programming/blob/main/Foundational_C%23_with_Microsoft/certificate.png)<br>
+![Foundational C# with Microsoft certificate](https://github.com/khkhiu/MOOC/blob/main/Foundational_C%23_with_Microsoft/certificate.png)<br>
 <em>[Foundational C# with Microsoft link](https://www.freecodecamp.org/certification/fcc924c0f3b-f074-4b7f-ad80-f692485325fa/foundational-c-sharp-with-microsoft)</em>

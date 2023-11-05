@@ -100,5 +100,5 @@ Part 7 of Java Programming I focuses on general programming paradigms and algori
 
 # Apendix
 ## Java Programming I certificate
-![Java Programming I certificate](https://github.com/khkhiu/Java_Programming/blob/main/Java_Programming/certificate-java-programming-i.png)
+![Java Programming I certificate](https://github.com/khkhiu/MOOC/blob/main/Java_Programming/certificate-java-programming-i.png)
 <em>[Java Programming I certificate link](https://certificates.mooc.fi/validate/r56j2e3uebn)</em>

@@ -41,5 +41,5 @@ Part 6 of 'Securing Software' consist of the following topics.
 
 1. Threat Analysis
 
-![Securing software certificate](https://github.com/khkhiu/Applied_Language_Technology/blob/main/Cybersecurity_Base/certificate-securing-software-2023.png)
+![Securing software certificate](https://github.com/khkhiu/MOOC/blob/main/Cybersecurity_Base/certificate-securing-software-2023.png)
 <em>[Securing software certificate link](https://certificates.mooc.fi/validate/vegbhbvfvlq)</em>
