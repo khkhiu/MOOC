@@ -13,7 +13,7 @@ There are many reasons why it is valuable for you to learn Linux. If you are loo
 
 After completing this course, you will have a solid introduction to working with Linux from the command line, using Red Hat Enterprise Linux 8 as a model. In applying these skills, you will be able to perform fundamental operational tasks, whether your Linux machine is on your desk or on a remote system across the Internet.
 
-![Certificate](https://github.com/khkhiu/MOOC/blob/main/Coursera/Certificates/Fundamentals of Red Hat Enterprise Linux.pdf)
+![Certificate](https://github.com/khkhiu/MOOC/blob/main/Coursera/Certificates/Fundamentals_of_Red_Hat_Enterprise_Linux.pdf)
 
 <em>[Coursera link](https://coursera.org/share/bd0e2c633d918f4133a205ee785a5f75)</em>
 
@@ -27,6 +27,6 @@ The discipline’s terminology, which can so often confuse the newcomer, is pres
 
 This course welcomes anyone who wants to find out how complex systems can be developed and implemented successfully. It is relevant to anyone in project management, engineering, QA, logistic support, operations, management, maintenance and other work areas. No specific background is required, and we welcome learners with all levels of interest and experience.
 
-![Certificate](https://github.com/khkhiu/MOOC/blob/main/Coursera/Certificates/Introduction to Systems Engineering.pdf)
+![Certificate](https://github.com/khkhiu/MOOC/blob/main/Coursera/Certificates/Introduction_to_Systems_Engineering.pdf)
 
 <em>[Coursera link](https://coursera.org/share/738fc84d17bbd3eec03c81aa32fddf31)</em>
