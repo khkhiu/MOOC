@@ -1,31 +1,18 @@
-# MOOC
-A repository containing all of the MOOC courses I have taken
+# Coursera
+A repository containing all of the MOOC courses I have taken on Coursera
 
-The projects in question include the following:
+The courses are as follows:
 
-## [Applied Language Technology(in Python)](https://github.com/khkhiu/MOOC/tree/main/Applied_Language_Technology)
-University of Helsinki's Applied Language Technology MOOC. The course introduces learners to basic approaches to processing and representing language computationally using the Python programming language.
+## [Fundamentals of Red Hat Enterprise Linux](https://www.coursera.org/learn/fundamentals-of-red-hat-enterprise-linux)
 
-## [CS50](https://github.com/khkhiu/MOOC/tree/main/CS50)
-CS50 is Harvard University's introductory course on computer science and programming. It emphasizes the development of problem-solving skills, prioritizing correctness, design, and style. The course covers topics such as computational thinking, abstraction, algorithms, data structures, and computer science in general. Its problem sets draw inspiration from various fields, including the arts, humanities, and sciences.
+This course will provide you with a basic introduction to Linux® skills using Red Hat® Enterprise Linux 8. It will show you how a Linux system is organized, and will demonstrate introductory system administration tasks, which you will be able to practice on your own.
 
-This course teaches fundamental programming principles, enabling students to learn new languages independently. The course starts with the C language, a traditional but essential language that underlies newer languages. Topics include not only variables, functions, conditionals, and loops, but also how computers work, like memory management. The course then transitions to Python, a higher-level language that students will understand better because of their knowledge of C.
+You will be introduced to reasons why Linux and the open source development model are so important in today's computing environment. Linux systems are used everywhere—the internet, point-of-sale systems, and the world's stock markets. You’ll find Linux running smart TVs, in-flight entertainment systems, and most of the top supercomputers in the world.
 
-Towards the end of the course, the course introduces SQL, which students can use to store data in databases, and HTML, CSS, and JavaScript, which students can use to create both web and mobile applications. The course culminates in a final project, where students put all the have learnt into practice.
+There are many reasons why it is valuable for you to learn Linux. If you are looking for new opportunities in IT, Linux skills are in high demand. For example, if you are developing applications, it's likely your application or its runtime is hosted on Linux. If you're working in the cloud, your cloud instances may be based on Linux, and your private or public cloud environment is also probably based on Linux. If you're working with mobile applications or the Internet of Things, it is also likely that the operating system of your device is based on Linux. And, if you use Windows, you'll need to interoperate with Linux.
 
-## [DevOps With Docker](https://github.com/khkhiu/MOOC/tree/main/Devops_with_Docker)
-University of Helsinki's DevOps with Docker MOOC. This course provides an introduction to container technologies, with a particular focus on Docker and container orchestration using Docker Compose. Containers are a lightweight, portable way to package and deploy software applications. Throughout the course, we'll explore the various components of web services, such as reverse proxies and databases, and how they can be deployed using Docker.
+After completing this course, you will have a solid introduction to working with Linux from the command line, using Red Hat Enterprise Linux 8 as a model. In applying these skills, you will be able to perform fundamental operational tasks, whether your Linux machine is on your desk or on a remote system across the Internet.
 
-## [Foundational C# with Microsoft](https://github.com/khkhiu/MOOC/tree/main/Foundational_C%23_with_Microsoft)
-This course is jointly administered by FreeCodeCamp and Microsoft, offerring a comprehensive introduction to C# programming, covering its core concepts, syntax, and practical application in software development.
+![Fundamentals of Red Hat Enterprise Linux](https://github.com/khkhiu/MOOC/blob/main/Coursera/Certificates/Fundamentals_of_Red_Hat_Enterprise_Linux.pdf)
 
-Through hands-on exercises and projects, student will learn the fundamentals of C#, including variables, data types, control structures, and object-oriented programming principles. By the end of this course, students will have gained the practical skills and knowledge needed to confidently leverage C# for building applications.
-
-## [Full-Stack Open](https://github.com/khkhiu/MOOC/tree/main/Full-Stack-Open) 
-University of Helsinki's Full Stack Open MOOC. This course introduces students to modern JavaScript-based web development, with a focus on building Single-Page Applications(SPAs) with ReactJS using REST APIs built with Node.js. Other technologies introduced in the course includes:Redux, MongoDB, GraphQL, TypeScript, React Native, GitHub Actions and Docker.
-
-## [Java Programming](https://github.com/khkhiu/MOOC/tree/main/Java_Programming)
-University of Helsinki's Java programming MOOC. The course aims to teach students the basics of computer programming, algorithms and object-oriented programming using the Java programming language. 
-
-## [Securing Software](https://github.com/khkhiu/MOOC/tree/main/Cybersecurity_Base)
-University of Helsinki's Cyber Security Base MOOC, specifically the 'Securing Software' section.'Securing Software' focuses on security issues related to interconnected software. The participant will learn the principles of developing web applications, typical security issues that are related to such applications, and how such issues are discovered and mitigated.
+<em>[Coursera link](https://coursera.org/share/bd0e2c633d918f4133a205ee785a5f75)</em>
