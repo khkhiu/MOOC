@@ -1,8 +1,3 @@
-# [Coursera](https://www.coursera.org/)
-A repository containing all of the MOOC courses I have taken on Coursera
-
-The courses are as follows:
-
 ## [Fundamentals of Red Hat Enterprise Linux](https://www.coursera.org/learn/fundamentals-of-red-hat-enterprise-linux)
 
 This course will provide you with a basic introduction to Linux® skills using Red Hat® Enterprise Linux 8. It will show you how a Linux system is organized, and will demonstrate introductory system administration tasks, which you will be able to practice on your own.
