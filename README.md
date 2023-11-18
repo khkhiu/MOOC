@@ -3,9 +3,6 @@ A repository containing all of the MOOC courses I have taken
 
 The projects in question include the following:
 
-## [Applied Language Technology(in Python)](https://github.com/khkhiu/MOOC/tree/main/Applied_Language_Technology)
-University of Helsinki's Applied Language Technology MOOC. The course introduces learners to basic approaches to processing and representing language computationally using the Python programming language.
-
 ## [CS50](https://github.com/khkhiu/MOOC/tree/main/CS50)
 CS50 is Harvard University's introductory course on computer science and programming. It emphasizes the development of problem-solving skills, prioritizing correctness, design, and style. The course covers topics such as computational thinking, abstraction, algorithms, data structures, and computer science in general. Its problem sets draw inspiration from various fields, including the arts, humanities, and sciences.
 
@@ -32,6 +29,3 @@ University of Helsinki's Full Stack Open MOOC. This course introduces students t
 
 ## [Java Programming](https://github.com/khkhiu/MOOC/tree/main/Java_Programming)
 University of Helsinki's Java programming MOOC. The course aims to teach students the basics of computer programming, algorithms and object-oriented programming using the Java programming language. 
-
-## [Securing Software](https://github.com/khkhiu/MOOC/tree/main/Cybersecurity_Base)
-University of Helsinki's Cyber Security Base MOOC, specifically the 'Securing Software' section.'Securing Software' focuses on security issues related to interconnected software. The participant will learn the principles of developing web applications, typical security issues that are related to such applications, and how such issues are discovered and mitigated.
