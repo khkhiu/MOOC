@@ -29,7 +29,6 @@ Through a mix of videos, assessments, and hands-on labs, you’ll be introduced 
 
 <em>[Coursera link](https://coursera.org/share/a3e9432aa18866dbd435e264849f91d5)</em>
 
-
 ## [Introduction to Systems Engineering](https://www.coursera.org/learn/systems-engineering)
 
 "Introduction to Systems Engineering" uses a structured yet flexible approach to provide a holistic, solid foundation to the successful development of complicated systems.
