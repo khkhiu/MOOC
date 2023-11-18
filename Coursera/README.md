@@ -17,6 +17,19 @@ After completing this course, you will have a solid introduction to working with
 
 <em>[Coursera link](https://coursera.org/share/bd0e2c633d918f4133a205ee785a5f75)</em>
 
+## [Google IT Support Professional Certificate](https://www.coursera.org/professional-certificates/google-it-support)
+
+This program includes over 100 hours of instruction and hundreds of practice-based assessments, which will help you simulate real-world IT support scenarios that are critical for success in the workplace.
+
+The content is highly interactive and exclusively developed by Google employees with decades of experience in IT.
+
+Through a mix of videos, assessments, and hands-on labs, you’ll be introduced to troubleshooting, customer service, networking, operating systems, and security — foundational IT skills required for an entry-level job. 
+
+![Certificate](https://github.com/khkhiu/MOOC/blob/main/Coursera/Certificates/Google_IT_Spec.pdf)
+
+<em>[Coursera link](https://coursera.org/share/a3e9432aa18866dbd435e264849f91d5)</em>
+
+
 ## [Introduction to Systems Engineering](https://www.coursera.org/learn/systems-engineering)
 
 "Introduction to Systems Engineering" uses a structured yet flexible approach to provide a holistic, solid foundation to the successful development of complicated systems.

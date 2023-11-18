@@ -13,6 +13,12 @@ This course teaches fundamental programming principles, enabling students to lea
 
 Towards the end of the course, the course introduces SQL, which students can use to store data in databases, and HTML, CSS, and JavaScript, which students can use to create both web and mobile applications. The course culminates in a final project, where students put all the have learnt into practice.
 
+## [Coursera](https://github.com/khkhiu/MOOC/tree/main/Coursera)
+A repository of courses I have taken on Coursera, which include the following
+- Fundamentals of Red Hat Enterprise Linux
+- Google IT Support Professional Certificate
+- Introduction to Systems Engineering
+
 ## [DevOps With Docker](https://github.com/khkhiu/MOOC/tree/main/Devops_with_Docker)
 University of Helsinki's DevOps with Docker MOOC. This course provides an introduction to container technologies, with a particular focus on Docker and container orchestration using Docker Compose. Containers are a lightweight, portable way to package and deploy software applications. Throughout the course, we'll explore the various components of web services, such as reverse proxies and databases, and how they can be deployed using Docker.
 
