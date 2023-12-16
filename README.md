@@ -3,7 +3,7 @@ A repository containing all of the MOOC courses I have taken
 
 The projects in question include the following:
 
-##[Coursera](https://www.coursera.org/)
+## [Coursera](https://www.coursera.org/)
 Courses | Duration | Offered by | Link to certificate 
 :-- | :--: | :--: | :--: |
 [Introduction to Systems Engineering](https://www.coursera.org/learn/systems-engineering) | 9 weeks | [UNSW Sydney (The University of New South Wales)](https://www.coursera.org/unsw) | [Link](https://coursera.org/share/738fc84d17bbd3eec03c81aa32fddf31)
