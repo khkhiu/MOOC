@@ -3,6 +3,13 @@ A repository containing all of the MOOC courses I have taken
 
 The projects in question include the following:
 
+Coursera courses
+Courses | Duration | Offered by | Link to certificate 
+:-- | :--: | :--: | :--: |
+[Introduction to Systems Engineering](https://www.coursera.org/learn/systems-engineering) | 9 weeks | [UNSW Sydney (The University of New South Wales)](https://www.coursera.org/unsw) | [Link](https://coursera.org/share/738fc84d17bbd3eec03c81aa32fddf31)
+[Fundamentals of Red Hat Enterprise Linux](https://www.coursera.org/learn/fundamentals-of-red-hat-enterprise-linux) | 9 weeks | [Red Hat](https://www.coursera.org/redhat) | [Link](https://coursera.org/share/bd0e2c633d918f4133a205ee785a5f75)
+
+
 ## [DevOps With Docker](https://github.com/khkhiu/MOOC/tree/main/Devops_with_Docker)
 University of Helsinki's DevOps with Docker MOOC. This course provides an introduction to container technologies, with a particular focus on Docker and container orchestration using Docker Compose. Containers are a lightweight, portable way to package and deploy software applications. Throughout the course, we'll explore the various components of web services, such as reverse proxies and databases, and how they can be deployed using Docker.
 
