@@ -44,21 +44,24 @@ function update(location){
 }
 
 function update(location) {
-    button1.innerText = "Go to store";
-    button2.innerText = "Go to cave";
-    button3.innerText = "Fight dragon";
-    button1.onclick = goStore;
-    button2.onclick = goCave;
-    button3.onclick = fightDragon;
-    text.innerText = "You are in the town square. You see a sign that says \"Store\".";
+    // assign elements of arrays to respective locations
+    button1.innerText = location["button text"][0];
+    button2.innerText = location["button text"][1];
+    button3.innerText = location["button text"][2];
+    button1.onclick = location["button functions"][0];
+    button2.onclick = location["button functions"][1];
+    button3.onclick = location["button functions"][2];
+    text.innerText = location.text;
   }
   
   function goTown() {
-  
+    // FX call update and pass the first element of the 'location' array as an arg into update call
+    update(locations[0]);
   }
   
   function goStore() {
-  
+    // FX call update and pass the second element of the 'location' array as an arg into update call
+    update(locations[1]);
   }
 
 function goCave(){
