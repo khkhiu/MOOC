@@ -31,7 +31,13 @@ const locations = [
         "button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square"],
         "button functions": [buyHealth, buyWeapon, goTown],
         text: "You enter the store."
-    }
+    },
+    {
+      name: "cave",
+      "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
+      "button functions": [fightSlime, fightBeast, goTown],
+      text: "You enter the cave. You see some monsters."
+  }
 ];
 
 // Init buttons
@@ -64,16 +70,18 @@ function update(location) {
     update(locations[1]);
   }
 
-function goCave(){
-    console.log("Going to cave.");
-}
+  function goCave() {
+    // FX call update and pass the third element of the 'location' array as an arg into update call    
+    update(locations[2]);
+  }
 
 function fightDragon(){
     console.log("Fighting dragon.");
 }
 
 function buyHealth(){
-
+  gold = gold - 10;
+  health = health + 10;
 }
 
 function buyWeapon(){
