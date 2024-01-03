@@ -108,7 +108,7 @@ function buyWeapon() {
       let newWeapon = weapons[currentWeapon].name;
       //Use concat operator to state weapon name
       text.innerText = "You now have a " + newWeapon + ".";
-      //Push new newWeapon to end of inventory araay using push() method
+      //Push new newWeapon to end of inventory array using push() method
       inventory.push(newWeapon);
       //add new text to the end of text.innerText
       text.innerText += " In your inventory you have: " + inventory + ".";
@@ -116,9 +116,23 @@ function buyWeapon() {
       text.innerText = "You do not have enough gold to buy a weapon."
     }
   } else {
-    text.innerText = "You already have the most powerful weapon!"
+    text.innerText = "You already have the most powerful weapon!";
+    button2.innerText = "Sell weapon for 15 gold"
+    button2.onclick = sellWeapon;
   }
-
+}
+function sellWeapon() {
+  if (inventory.length > 1) {
+    gold += 15;
+    goldText.innerText = gold;
+    let newWeapon = weapons[currentWeapon];
+    text.innerText = "You now have a new weapon."
+    //use 'let' to constraint scope of 'current' weapon to this function only
+    //use 'shift()' method to take the first element of the inventory element and assign it to 'currentWeapon' variable
+    let currentWeapon = inventory.shift();
+    //use concat operator to set output text
+    text.innerText = "You sold a " + currentWeapon + ".";
+  }
 }
 
 function buyWeapon(){
