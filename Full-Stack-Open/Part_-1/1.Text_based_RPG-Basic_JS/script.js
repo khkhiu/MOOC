@@ -26,6 +26,12 @@ const weapons = [
   { name: 'sword', power: 100 }
 ];
 
+const monsters = [
+  {name: 'slime', level: 2, health: 15},
+  {name: 'fanged beast', level: 8, health: 60},
+  {name: 'dragon', level: 20, health: 300}
+]
+
 const locations = [
     {
         name: "town square",
@@ -44,7 +50,13 @@ const locations = [
       "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
       "button functions": [fightSlime, fightBeast, goTown],
       text: "You enter the cave. You see some monsters."
-  }
+    },
+    {
+      name: "fight",
+      "button text": ["Attack", "Dodge", "Run"],
+      "button functions": [attack, dodge, goTown],
+      text: "You are fighting a monster."
+    }
 ];
 
 // Init buttons
@@ -67,23 +79,19 @@ function update(location) {
     text.innerText = location.text;
   }
   
-  function goTown() {
-    // FX call update and pass the first element of the 'location' array as an arg into update call
-    update(locations[0]);
-  }
+function goTown() {
+  // FX call update and pass the first element of the 'location' array as an arg into update call
+  update(locations[0]);
+}
   
-  function goStore() {
-    // FX call update and pass the second element of the 'location' array as an arg into update call
-    update(locations[1]);
-  }
+function goStore() {
+  // FX call update and pass the second element of the 'location' array as an arg into update call
+  update(locations[1]);
+}
 
-  function goCave() {
-    // FX call update and pass the third element of the 'location' array as an arg into update call    
-    update(locations[2]);
-  }
-
-function fightDragon(){
-    console.log("Fighting dragon.");
+function goCave() {
+  // FX call update and pass the third element of the 'location' array as an arg into update call    
+  update(locations[2]);
 }
 
 function buyHealth() {
@@ -132,10 +140,37 @@ function sellWeapon() {
     let currentWeapon = inventory.shift();
     //use concat operator to set output text
     text.innerText = "You sold a " + currentWeapon + ".";
+    //add more text using += operator
+    text.innerText += " In your inventory you have: " + inventory;
+  } else {
+    text.innerText = "Don't sell your only weapon!";
   }
 }
 
-function buyWeapon(){
+function fightSlime() {
+  fighting = 0;
+  goFight();
+}
+
+function fightBeast() {
+  fighting = 1;
+  goFight();
+ }
+ 
+function fightDragon() {
+   fighting = 2;
+   goFight();
+ }
+
+ function goFight() {
+  update(locations[3])
+  monsterHealth = monsters[fighting].health;
+}
+
+function attack(){
 
 }
 
+function dodge(){
+  
+}
