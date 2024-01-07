@@ -67,7 +67,19 @@ const locations = [
     name: "lose",
     "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
     "button functions": [restart, restart, restart],
-    text: "You die. ☠️"
+    text: "You died."
+  },
+  {
+    name :"win",
+    "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+    "button functions": [restart, restart, restart],
+    text: "You defeat the dragon! YOU WIN THE GAME!" 
+  },
+  {
+    name: "easter egg",
+    "button text": ["2", "8", "Go to town square?"],
+    "button functions": [pickTwo, pickEight, easterEgg],
+    text: "You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!"
   }
 ];
 
@@ -186,24 +198,43 @@ function fightDragon() {
 function attack() {
   text.innerText = "The " + monsters[fighting].name + " attacks.";
   text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
-  health -= monster[fighting].level;
+  //set health equal to health minus the return value of the getMonsterAttackValue function, and passes the level of the monster as an argument.
+  health -= getMonsterAttackValue(monsters[fighting].level);
   // add a random number between 1 and the value of xp to your monsterHealth variable change.
+  if (isMonsterHit()){
   monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
+  } else {
+    text.innerText += " You miss.";
+  }
   healthText.innerText = health;
   monsterHealthText.innerText = monsterHealth;
   if (health <= 0){
     lose();
   } else if (monsterHealth <= 0){
-    defeatMonster();
+    // if fighting dragon, call winGame FX, otherwise call defeatMonster FX
+    // use ternary operator, syntax === condition ? true : false
+    fighting === 2 ? winGame() : defeatMonster();
   }
+  // add weapon degradation
+  if (Math.random() <= .1 && inventory.length !== 1){
+    text.innerText += " Your " + inventory.pop() + " breaks.";
+    currentWeapon --;
+  }
+}
+
+function getMonsterAttackValue(level){
+  const hit = (level * 5) - (Math.floor(Math.random() * xp));
+  console.log(hit);
+  // prevent FX from returning a negative value
+  return hit > 0 ? hit : 0;
+}
+
+function isMonsterHit(){
+  return Math.random() > .2 || health < 20;
 }
 
 function dodge() {
   text.innerText = "You dodge the attack from the " + monsters[fighting].name;
-}
-
-function dodge(){
-  
 }
 
 function defeatMonster(){
@@ -220,6 +251,10 @@ function lose(){
  update(locations[5]) 
 }
 
+function winGame(){
+  update(locations[6])
+}
+
 function restart(){
   xp = 0;
   health = 100;
@@ -230,4 +265,38 @@ function restart(){
   health.innerText = health;
   gold.innerText = gold;
   goTown()
+}
+
+function easterEgg(){
+  update(locations[7]);
+}
+
+function pick(guess){
+  const numbers = []
+  while (numbers.length < 10){
+    numbers.push(Math.floor(Math.random() * 11))  
+  }
+  text.innerText = "You picked " + guess + ". Here are the random numbers:\n"
+  for (let i = 1; i < 10; i++) {
+    text.innerText += numbers[i] + "\n"
+  }
+  if (numbers.indexOf(guess) !== -1) {
+    text.innerText += "Right! You win 20 gold!";
+    gold += 20;
+    goldText.innerText = gold;
+  } else {
+    text.innerText += "Wrong! You lose 10 health!";
+    health -= 10;
+    healthText.innerText = health;
+    if(health <= 0){
+      lose();
+    }
+  }
+}
+function pickTwo(){
+  pick(2);
+}
+
+function pickEight(){
+  pick(8);
 }
