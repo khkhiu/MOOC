@@ -4,14 +4,11 @@ A repository containing all of the MOOC courses I have taken
 The projects in question include the following:
 
 ## [Coursera](https://www.coursera.org/)
-Courses | Duration | Offered by | Link to certificate 
+Courses | Duration | Offered by | Link to certificate
 :-- | :--: | :--: | :--: |
 [Introduction to Systems Engineering](https://www.coursera.org/learn/systems-engineering) | 9 weeks | [UNSW Sydney (The University of New South Wales)](https://www.coursera.org/unsw) | [Link](https://coursera.org/share/738fc84d17bbd3eec03c81aa32fddf31)
 [Fundamentals of Red Hat Enterprise Linux](https://www.coursera.org/learn/fundamentals-of-red-hat-enterprise-linux) | 9 weeks | [Red Hat](https://www.coursera.org/redhat) | [Link](https://coursera.org/share/bd0e2c633d918f4133a205ee785a5f75)
 [Google IT Support Professional Certificate](https://www.coursera.org/professional-certificates/google-it-support) | 6 Months | [Google Professional Certificates ](https://www.coursera.org/google-career-certificates) | [Link](https://coursera.org/share/a3e9432aa18866dbd435e264849f91d5)
-[Google Project Management Professional Certificate](https://www.coursera.org/professional-certificates/google-it-support) | 6 Months | [Google Professional Certificates ](https://www.coursera.org/google-career-certificates) | [Link](https://coursera.org/share/062ab629772ec6cf0310484ed3a91bf0)
-[Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-it-support) | 6 Months | [Google Professional Certificates ](https://www.coursera.org/google-career-certificates) | [Link](https://coursera.org/share/a9e7b0d714820e7e2609b492c6ceea2b)
-[Google UX Design Certificate](https://www.coursera.org/professional-certificates/google-it-support) | 6 Months | [Google Professional Certificates ](https://www.coursera.org/google-career-certificates) | [Link](https://coursera.org/share/ed46d856bdbd61584969ccb107a6a498)
 
 
 ## [DevOps With Docker](https://github.com/khkhiu/MOOC/tree/main/Devops_with_Docker)
