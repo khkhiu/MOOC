@@ -10,11 +10,40 @@
     <main>
       <h1>Calorie Counter</h1>
       <div class="container">
+        <!--A form for user input-->
         <form id="calorie-counter">
           <label for="budget">Budget</label>
-          <input id="budget"></input>
-          </label>
-        </form> 
+          <!--allow for user input-->
+          <input
+            type="number"
+            min="0"
+            id="budget"
+            placeholder="Daily calorie budget"
+            required
+          />
+          <!--fieldset for various fields, The <fieldset> HTML element is used to group several controls as well as labels (<label>) within a web form-->
+          <fieldset id="breakfast">
+            <legend>Breakfast</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="lunch">
+            <legend>Lunch</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="dinner">
+            <legend>Dinner</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="snacks">
+            <legend>Snacks</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="exercise">
+            <legend>Exercise</legend>
+            <div class="input-container"></div>
+          </fieldset>
+        </form>
+        
       </div>
     </main>
   </body>
