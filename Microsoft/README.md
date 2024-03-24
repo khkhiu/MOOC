@@ -12,3 +12,7 @@ The challenge starts on November 15, 2023, at 4:00 PM (16:00) UTC and ends on Ja
 
 3. <strong>Microsoft Ignite: Azure Infrastructure </strong> 
 - Learn how to use monitoring services on Azure to bring operational excellence to your infrastructure. Deploy monitoring for workloads on virtual machines, use built-in tools in Windows Server to monitor performance, monitor Azure Arc-enabled servers, and enable Azure Monitor in hybrid scenarios. 
+
+## Ignite 2023 badge
+![Ignite 2023 badge](https://github.com/khkhiu/MOOC/tree/main/Microsoft/Microsoft_Ignite-15Nov23-15Jan24/ignite_2023.png)
+<em>[Ignite 2023 badge](https://learn.microsoft.com/api/achievements/share/en-us/KHKhiu-1199/AQCCGHA7?sharingId=A088EB06019DA232)</em>
