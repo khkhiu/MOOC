@@ -1,0 +1,11 @@
+docker image pull devopsdockeruh/simple-web-service:ubuntu
+
+docker run -d -it --name ubuntuEX 4e3362e907d5d1b01fc3e9bf435ebd97c35fd56da94f4b6bd2b94070bbf38f84^C
+
+docker exec -it ubuntuEX bash
+
+tail -f ./text.log
+
+exit
+
+docker rm --force ubuntuEX
