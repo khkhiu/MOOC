@@ -1,0 +1,5 @@
+docker run -it devopsdockeruh/pull_exercise
+
+basics
+
+docker image rm --force devopsdockeruh/pull_exercise
