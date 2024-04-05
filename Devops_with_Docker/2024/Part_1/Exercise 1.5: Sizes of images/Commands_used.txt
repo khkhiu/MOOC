@@ -1,0 +1,12 @@
+docker image pull devopsdockeruh/simple-web-service:alpine
+
+docker run -d -it --name alpineEX
+fd312adc88e08116713c2c47a0581b19987c35781ded55e1601a6e592b93cff8
+
+docker exec -it alpineEX sh
+
+tail -f ./text.log
+
+exit
+
+docker rm --force alpineEX
