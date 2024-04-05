@@ -1,0 +1,13 @@
+docker image pull devopsdockeruh/simple-web-service:ubuntu
+
+docker run -d -it --name ubuntuEX2 ubuntu
+
+docker exec -it ubuntuEX2 bash
+
+sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://helsinki.fi; done'
+
+helsinki.fi
+
+exit
+
+docker rm --force ubuntuEX2
