@@ -1,5 +1,5 @@
 #start from ubuntu image
-From ubuntu:22.04
+FROM ubuntu:22.04
 
 #Update and install curl
 RUN apt-get update && \
