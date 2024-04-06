@@ -1,0 +1,18 @@
+#start from ubuntu image
+From ubuntu:22.04
+
+#Update and install curl
+RUN apt-get update && \
+    apt-get install -y curl
+
+#useapp as workdir to execute instructions at that location
+WORKDIR /usr/src/app
+
+#copy file into app
+COPY script.sh /app/script.sh
+
+#add exe permissions to build
+RUN chmod +x script.sh
+
+#run script.sh
+CMD ["bash", "/app/script.sh"]
