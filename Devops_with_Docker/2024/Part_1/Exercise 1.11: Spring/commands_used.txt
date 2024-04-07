@@ -1,0 +1,3 @@
+docker build -t java_spring_ex .
+
+docker run -p 8080:8080 java_spring_ex
