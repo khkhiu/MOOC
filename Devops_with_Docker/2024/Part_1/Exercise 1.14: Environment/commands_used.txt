@@ -1,0 +1,9 @@
+RUN 'Frontend' and 'Backend' dockerfiles in their respective folders
+
+FOR FRONTEND
+docker build . -t frontend
+docker run -d -p 5000:5000 frontend
+
+FOR BACKEND
+docker build . -t backend
+docker run -d -p 8080:8080 backend
