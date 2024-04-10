@@ -1,0 +1,18 @@
+#Build docker images for frontend and backend before running this yml file
+version: "3.8"
+
+services:
+
+    backend: 
+        image: backend
+        build: ./backend
+        ports: 
+            - 8080:8080
+        container_name: backend
+
+    frontend:
+        image: frontend
+        build: ./frontend
+        ports:
+            - 5000:5000
+        container_name: frontend
