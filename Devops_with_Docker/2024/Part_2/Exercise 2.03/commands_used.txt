@@ -1,0 +1,5 @@
+docker build . -t frontend_ex
+docker build . -t backend_ex
+docker compose up
+docker container rm frontend
+docker container rm backend

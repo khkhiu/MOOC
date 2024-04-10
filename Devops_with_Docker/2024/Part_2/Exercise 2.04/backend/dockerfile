@@ -1,0 +1,20 @@
+# Use the golang:1.16-alpine image as the base image
+FROM golang:1.16-alpine
+
+# Expose port 8080 to the outside world
+EXPOSE 8080
+
+# Set the working directory inside the container
+WORKDIR /usr/src/app
+
+# Copy the current directory's contents into the container at /usr/src/app
+COPY . .
+
+# Set the environment variable REQUEST_ORIGIN to http://localhost:5000
+ENV REQUEST_ORIGIN=http://localhost:5000
+
+# Build the Go application
+RUN go build
+
+# Specify the command to run on container startup
+CMD ["./server"]
