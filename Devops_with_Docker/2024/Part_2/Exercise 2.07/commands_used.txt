@@ -1,0 +1,12 @@
+docker build . -t frontend
+docker build . -t backend
+docker compose up
+docker container rm frontend
+docker container rm backend
+docker container rm postgres
+docker container rm redis-cache
+docker images
+docker image rm backend
+docker image rm frontend
+docker image rm postgres
+docker image rm redis
