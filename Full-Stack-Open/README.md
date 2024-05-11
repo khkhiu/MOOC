@@ -1,10 +1,6 @@
 # [Full Stack Open](https://fullstackopen.com/en/) 
 Repository for University of Helsinki's Full Stack Open MOOC. This course introduces students to modern JavaScript-based web development, with a focus on building Single-Page Applications(SPAs) with ReactJS using REST APIs built with Node.js. Other technologies introduced in the course includes:Redux, MongoDB, GraphQL, TypeScript, React Native, GitHub Actions and Docker.
 
-## [Part -1: JavaScript Algorithms and Data Structures](https://github.com/khkhiu/MOOC/tree/main/Full-Stack-Open/Part_-1)
-
-- Learn Basic JavaScript by Building a Role Playing Game
-
 ## [Part 0: Fundamentals of Web apps](https://github.com/khkhiu/MOOC/tree/main/Full-Stack-Open/Part_0)
 
 - General Info
