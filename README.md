@@ -20,6 +20,3 @@ University of Helsinki's Full Stack Open MOOC. This course introduces students t
 
 ## [Java Programming](https://github.com/khkhiu/MOOC/tree/main/Java_Programming)
 University of Helsinki's Java programming MOOC. The course aims to teach students the basics of computer programming, algorithms and object-oriented programming using the Java programming language. 
-
-## [Microsoft Learn Cloud Skills Challenge](https://github.com/khkhiu/MOOC/tree/main/Microsoft)
-The Microsoft Learn Cloud Skills Challenge is a gamified learning experience that helps users gain the skills they need to achieve more with technology. With immersive training content curated from across Microsoft Learn, users get an engaging, interactive, and rewarding learning experience that will them you achieve your goals. 
