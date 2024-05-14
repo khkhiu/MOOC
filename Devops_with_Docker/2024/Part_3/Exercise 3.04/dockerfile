@@ -1,0 +1,21 @@
+# Start from Ubuntu image
+FROM ubuntu:20.04
+
+#Update and install curl
+RUN apt-get -y update; apt-get -y install curl; apt-get install git -y
+
+RUN curl -fsSL https://get.docker.com -o get-docker.sh
+
+RUN sh get-docker.sh
+
+# Use /usr/src/app as our workdir. The following instructions will be executed in this location.
+WORKDIR /usr/src/app
+
+# Copy the web.sh file from this location to /usr/src/app/ creating /usr/src/app/web.sh
+COPY ./run.sh .
+
+# Alternatively, if we skipped chmod earlier, we can add execution permissions during the build.
+RUN chmod +x ./run.sh
+
+# When running docker run the command will be ./web.sh
+ENTRYPOINT ["/run.sh"]
