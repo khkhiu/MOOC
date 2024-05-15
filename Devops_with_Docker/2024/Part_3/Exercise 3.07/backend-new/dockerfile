@@ -1,0 +1,17 @@
+FROM golang:1.16-alpine
+
+ENV REQUEST_ORIGIN=http://localhost
+
+ADD . .
+
+WORKDIR $GOPATH/example-backend
+
+RUN go build -o server . && \
+    useradd -m backend && \
+    chown -R backend:backend $GOPATH/example-backend
+
+USER backend
+
+EXPOSE 8080
+
+CMD ["/go/example-backend/server"]
