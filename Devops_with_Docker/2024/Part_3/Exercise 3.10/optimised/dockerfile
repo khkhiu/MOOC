@@ -1,0 +1,12 @@
+# Start from Ubuntu image
+FROM ubuntu:22.04
+
+# Install python3, use 'DEBIAN_FRONTEND=noninteractive' to prevent errors
+RUN DEBIAN_FRONTEND=noninteractive && \
+    apt-get update && \
+    apt-get install -y python3 && \
+    apt-get autoremove
+
+#Set user to 'user-1'
+RUN useradd -ms /bin/bash user-1
+USER user-1
