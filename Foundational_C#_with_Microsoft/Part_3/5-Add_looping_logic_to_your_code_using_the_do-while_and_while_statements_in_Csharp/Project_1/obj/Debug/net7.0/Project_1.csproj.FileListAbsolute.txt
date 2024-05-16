@@ -1,0 +1,15 @@
+/mnt/HDD_01/Projects/C#_Programming/FoundationCsharp-Part_3/5-Add_looping_logic_to_your_code_using_the_do-while_and_while_statements_in_Csharp/Project_1/bin/Debug/net7.0/Project_1
+/mnt/HDD_01/Projects/C#_Programming/FoundationCsharp-Part_3/5-Add_looping_logic_to_your_code_using_the_do-while_and_while_statements_in_Csharp/Project_1/bin/Debug/net7.0/Project_1.deps.json
+/mnt/HDD_01/Projects/C#_Programming/FoundationCsharp-Part_3/5-Add_looping_logic_to_your_code_using_the_do-while_and_while_statements_in_Csharp/Project_1/bin/Debug/net7.0/Project_1.runtimeconfig.json
+/mnt/HDD_01/Projects/C#_Programming/FoundationCsharp-Part_3/5-Add_looping_logic_to_your_code_using_the_do-while_and_while_statements_in_Csharp/Project_1/bin/Debug/net7.0/Project_1.dll
+/mnt/HDD_01/Projects/C#_Programming/FoundationCsharp-Part_3/5-Add_looping_logic_to_your_code_using_the_do-while_and_while_statements_in_Csharp/Project_1/bin/Debug/net7.0/Project_1.pdb
+/mnt/HDD_01/Projects/C#_Programming/FoundationCsharp-Part_3/5-Add_looping_logic_to_your_code_using_the_do-while_and_while_statements_in_Csharp/Project_1/obj/Debug/net7.0/Project_1.csproj.AssemblyReference.cache
+/mnt/HDD_01/Projects/C#_Programming/FoundationCsharp-Part_3/5-Add_looping_logic_to_your_code_using_the_do-while_and_while_statements_in_Csharp/Project_1/obj/Debug/net7.0/Project_1.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/HDD_01/Projects/C#_Programming/FoundationCsharp-Part_3/5-Add_looping_logic_to_your_code_using_the_do-while_and_while_statements_in_Csharp/Project_1/obj/Debug/net7.0/Project_1.AssemblyInfoInputs.cache
+/mnt/HDD_01/Projects/C#_Programming/FoundationCsharp-Part_3/5-Add_looping_logic_to_your_code_using_the_do-while_and_while_statements_in_Csharp/Project_1/obj/Debug/net7.0/Project_1.AssemblyInfo.cs
+/mnt/HDD_01/Projects/C#_Programming/FoundationCsharp-Part_3/5-Add_looping_logic_to_your_code_using_the_do-while_and_while_statements_in_Csharp/Project_1/obj/Debug/net7.0/Project_1.csproj.CoreCompileInputs.cache
+/mnt/HDD_01/Projects/C#_Programming/FoundationCsharp-Part_3/5-Add_looping_logic_to_your_code_using_the_do-while_and_while_statements_in_Csharp/Project_1/obj/Debug/net7.0/Project_1.dll
+/mnt/HDD_01/Projects/C#_Programming/FoundationCsharp-Part_3/5-Add_looping_logic_to_your_code_using_the_do-while_and_while_statements_in_Csharp/Project_1/obj/Debug/net7.0/refint/Project_1.dll
+/mnt/HDD_01/Projects/C#_Programming/FoundationCsharp-Part_3/5-Add_looping_logic_to_your_code_using_the_do-while_and_while_statements_in_Csharp/Project_1/obj/Debug/net7.0/Project_1.pdb
+/mnt/HDD_01/Projects/C#_Programming/FoundationCsharp-Part_3/5-Add_looping_logic_to_your_code_using_the_do-while_and_while_statements_in_Csharp/Project_1/obj/Debug/net7.0/Project_1.genruntimeconfig.cache
+/mnt/HDD_01/Projects/C#_Programming/FoundationCsharp-Part_3/5-Add_looping_logic_to_your_code_using_the_do-while_and_while_statements_in_Csharp/Project_1/obj/Debug/net7.0/ref/Project_1.dll

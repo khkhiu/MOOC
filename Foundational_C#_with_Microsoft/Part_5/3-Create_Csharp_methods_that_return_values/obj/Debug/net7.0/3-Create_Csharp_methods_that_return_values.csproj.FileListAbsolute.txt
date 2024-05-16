@@ -1,0 +1,15 @@
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/3-Create_Csharp_methods_that_return_values/bin/Debug/net7.0/3-Create_Csharp_methods_that_return_values
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/3-Create_Csharp_methods_that_return_values/bin/Debug/net7.0/3-Create_Csharp_methods_that_return_values.deps.json
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/3-Create_Csharp_methods_that_return_values/bin/Debug/net7.0/3-Create_Csharp_methods_that_return_values.runtimeconfig.json
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/3-Create_Csharp_methods_that_return_values/bin/Debug/net7.0/3-Create_Csharp_methods_that_return_values.dll
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/3-Create_Csharp_methods_that_return_values/bin/Debug/net7.0/3-Create_Csharp_methods_that_return_values.pdb
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/3-Create_Csharp_methods_that_return_values/obj/Debug/net7.0/3-Create_Csharp_methods_that_return_values.csproj.AssemblyReference.cache
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/3-Create_Csharp_methods_that_return_values/obj/Debug/net7.0/3-Create_Csharp_methods_that_return_values.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/3-Create_Csharp_methods_that_return_values/obj/Debug/net7.0/3-Create_Csharp_methods_that_return_values.AssemblyInfoInputs.cache
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/3-Create_Csharp_methods_that_return_values/obj/Debug/net7.0/3-Create_Csharp_methods_that_return_values.AssemblyInfo.cs
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/3-Create_Csharp_methods_that_return_values/obj/Debug/net7.0/3-Create_Csharp_methods_that_return_values.csproj.CoreCompileInputs.cache
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/3-Create_Csharp_methods_that_return_values/obj/Debug/net7.0/3-Create_Csharp_methods_that_return_values.dll
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/3-Create_Csharp_methods_that_return_values/obj/Debug/net7.0/refint/3-Create_Csharp_methods_that_return_values.dll
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/3-Create_Csharp_methods_that_return_values/obj/Debug/net7.0/3-Create_Csharp_methods_that_return_values.pdb
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/3-Create_Csharp_methods_that_return_values/obj/Debug/net7.0/3-Create_Csharp_methods_that_return_values.genruntimeconfig.cache
+/mnt/HDD_01/Projects/FFC_C#_Programming/FoundationCsharp-Part_5/3-Create_Csharp_methods_that_return_values/obj/Debug/net7.0/ref/3-Create_Csharp_methods_that_return_values.dll
