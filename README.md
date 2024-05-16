@@ -15,7 +15,7 @@ Courses | Duration | Offered by | Link to certificate
 ## [DevOps With Docker](https://github.com/khkhiu/MOOC/tree/main/Devops_with_Docker)
 University of Helsinki's DevOps with Docker MOOC. This course provides an introduction to container technologies, with a particular focus on Docker and container orchestration using Docker Compose. Containers are a lightweight, portable way to package and deploy software applications. Throughout the course, we'll explore the various components of web services, such as reverse proxies and databases, and how they can be deployed using Docker.
 
-## [Foundational C# with Microsoft](https://github.com/khkhiu/MOOC/tree/main/Foundational_C#_with_Microsoft)
+## [Foundational C# with Microsoft](https://github.com/khkhiu/MOOC/tree/main/Foundational_C%23_with_Microsoft)
 This course is jointly administered by FreeCodeCamp and Microsoft, offerring a comprehensive introduction to C# programming, covering its core concepts, syntax, and practical application in software development.
 
 Through hands-on exercises and projects, student will learn the fundamentals of C#, including variables, data types, control structures, and object-oriented programming principles. By the end of this course, students will have gained the practical skills and knowledge needed to confidently leverage C# for building applications.
