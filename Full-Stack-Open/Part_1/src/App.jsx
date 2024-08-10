@@ -16,6 +16,69 @@ Note: a new component name 'Part' needs to be created
 Modify the variable definitions of the App component to use objects
 Also refactor the application so that it still works
 */
+
+/* EX 1.4
+Place the objects into an array. 
+Modify the variable definitions of App into the following form and modify the other parts of the application accordingly.
+However, do not pass different objects as separate props from the App component to the components Content and Total.
+Instead, pass them directly as an array.
+*/
+
+
+const Header = (props) => {
+  console.log(props)
+  return(
+    <h1>{props.course}</h1>
+  )
+}
+
+const Content = (props) => {
+  console.log(props)
+  return(
+    <div>
+      <p>{props.parts[0].name}: {props.parts[0].exercises}</p>
+      <p>{props.parts[1].name}: {props.parts[1].exercises}</p>
+      <p>{props.parts[2].name}: {props.parts[2].exercises}</p>
+    </div>
+  )
+}
+
+const Total = (props) => {
+  console.log(props)
+  return(
+    <p>Number of exercises = {props.parts[0].exercises + props.parts[1].exercises + props.parts[2].exercises}</p>
+  )
+
+}
+
+const App = () => {
+  const course = 'Half Stack application development'
+  const parts = [
+    {
+      name: 'Fundamentals of React',
+      exercises: 10
+    },
+    {
+      name: 'Using props to pass data',
+      exercises: 7
+    },
+    {
+      name: 'State of a component',
+      exercises: 14
+    }
+  ]
+
+  return (
+    <div>
+      <Header course = {course}/>
+      <Content parts = {parts}/>
+      <Total parts = {parts}/>
+    </div>
+  )
+}
+
+
+/* Code for EX1.3
 const App = () => {
   const course = 'Half Stack application development'
   const part1 = {
@@ -44,7 +107,7 @@ const App = () => {
 }
 
 export default App
-
+*/
 
 /* Code for EX 1.1 and 1.2 for reference
 const Header = (props) => {
@@ -150,3 +213,4 @@ const App = () => {
 export default App
 */
 
+export default App
