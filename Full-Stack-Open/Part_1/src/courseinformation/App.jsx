@@ -1,4 +1,4 @@
-/* EX 1.1 - COMPLETE
+/* EX 1.1
 1. Refactor code to contain components: Header, Content, and Total. 
 2. Passes the necessary data to each component using props. 
 3. Header takes care of rendering the name of the course
@@ -6,7 +6,7 @@
 5. Total renders the total number of exercises.
 */
 
-/* EX 1.2 - COMPLETE
+/* EX 1.2
 Refactor the Content component so that it does not render any names of parts or their number of exercises by itself. 
 Instead, it only renders three Part components of which each renders the name and number of exercises of one part.
 Note: a new component name 'Part' needs to be created
@@ -15,6 +15,13 @@ Note: a new component name 'Part' needs to be created
 /* EX 1.3
 Modify the variable definitions of the App component to use objects
 Also refactor the application so that it still works
+*/
+
+/* EX 1.4
+Place the objects into an array.
+Modify the variable definitions of App into the following form and modify the other parts of the application accordingly.
+However, do not pass different objects as separate props from the App component to the components Content and Total.
+Instead, pass them directly as an array.
 */
 
 /* EX 1.5
@@ -74,13 +81,6 @@ const App = () => {
     </div>
   )
 }
-
-/* EX 1.4
-Place the objects into an array. 
-Modify the variable definitions of App into the following form and modify the other parts of the application accordingly.
-However, do not pass different objects as separate props from the App component to the components Content and Total.
-Instead, pass them directly as an array.
-*/
 
 /* EX 1.4
 const Header = (props) => {
