@@ -1,3 +1,17 @@
+/* EX 1.1 - COMPLETE
+1. Refactor code to contain components: Header, Content, and Total. 
+2. Passes the necessary data to each component using props. 
+3. Header takes care of rendering the name of the course
+4. Content renders the parts and their number of exercises
+5. Total renders the total number of exercises.
+*/
+
+/* EX 1.2 - COMPLETE
+Refactor the Content component so that it does not render any names of parts or their number of exercises by itself. 
+Instead, it only renders three Part components of which each renders the name and number of exercises of one part.
+Note: a new component name 'Part' needs to be created
+*/
+
 const Header = (props) => {
   console.log(props)
   return(
@@ -5,6 +19,28 @@ const Header = (props) => {
   )
 }
 
+const Part = (props) =>{
+  console.log(props)
+  return(
+    <p>
+      {props.part} {props.exercises}
+    </p>
+  )
+
+}
+
+const Content = (props) => {
+  console.log(props)
+  return(
+    <div>
+      <Part part = {props.part1} exercises = {props.exercises1}/>
+      <Part part = {props.part2} exercises = {props.exercises2}/>
+      <Part part = {props.part3} exercises = {props.exercises3}/>
+    </div>
+  )
+}
+
+/*EX 1.1 code for reference
 const Content = (props) => {
   console.log(props)
   return(
@@ -15,7 +51,7 @@ const Content = (props) => {
     </div>
   )
 }
-
+*/
 const Total = (props) => {
   console.log(props)
   return(
