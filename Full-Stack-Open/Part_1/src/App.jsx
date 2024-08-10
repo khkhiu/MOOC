@@ -12,6 +12,41 @@ Instead, it only renders three Part components of which each renders the name an
 Note: a new component name 'Part' needs to be created
 */
 
+/* EX 1.3
+Modify the variable definitions of the App component to use objects
+Also refactor the application so that it still works
+*/
+const App = () => {
+  const course = 'Half Stack application development'
+  const part1 = {
+    name: 'Fundamentals of React',
+    exercises: 10
+  }
+  const part2 = {
+    name: 'Using props to pass data',
+    exercises: 7
+  }
+  const part3 = {
+    name: 'State of a component',
+    exercises: 14
+  }
+  const total = part1.exercises + part2.exercises + part3.exercises
+
+  return (
+    <div>
+      <h1>{course}</h1>
+        <p>{part1.name}: {part1.exercises}</p>
+        <p>{part2.name}: {part2.exercises}</p>
+        <p>{part3.name}: {part3.exercises}</p>      
+        <p>Total number of exercises: {total}</p>
+    </div>
+  )
+}
+
+export default App
+
+
+/* Code for EX 1.1 and 1.2 for reference
 const Header = (props) => {
   console.log(props)
   return(
@@ -51,7 +86,7 @@ const Content = (props) => {
     </div>
   )
 }
-*/
+
 const Total = (props) => {
   console.log(props)
   return(
@@ -85,7 +120,7 @@ const App = () => {
 
 export default App
 
-/* Old code for reference
+/* Starter code for reference
 const App = () => {
   const course = 'Half Stack application development'
   const part1 = 'Fundamentals of React'
@@ -114,3 +149,4 @@ const App = () => {
 
 export default App
 */
+
