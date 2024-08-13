@@ -1,6 +1,39 @@
+
+// Fun with state hooks and event handling
+import { useState } from 'react'
+
+
+const App = () => {
+
+  const [ counter, setCounter] = useState(0)
+
+  setTimeout(() => setCounter(counter + 1),1000)
+
+  console.log('rendering:', counter)
+
+  return (
+    <div>{counter}
+      <button onClick={() => setCounter(0)}>
+        Reset counter
+      </button>
+    </div>
+  )
+}
+
+/*
+const App = (Apps) => {
+  const {counter} = props
+
+  return(
+    <div>{counter}</div>
+  )
+}
+*/
+
 /*Using destructures */
+/*
 const Hello = (props) => {
-  /*Alt props usage: const Hello = ({name, age}) => {} */
+  //Alt props usage: const Hello = ({name, age}) => {} 
   const {name, age} = props
   const bornYear = () => new Date().getFullYear() - age
 
@@ -24,7 +57,7 @@ const App = () => {
     </div>
   )
 }
-
+*/
 /* original code for reference
 const Hello = (props) => {
   const bornYear = () => {
@@ -54,3 +87,4 @@ const App = () => {
   )
 }
 */
+export default App
