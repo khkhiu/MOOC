@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 
 import App from './App'
 
+//Using map method of the 'notes' array
 const notes = [
   {
     id: 1,
@@ -27,5 +28,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   
 )
 
-const result = notes.map(note => note.id)
+const result = notes.map(note => note.content)
 console.log(result)
