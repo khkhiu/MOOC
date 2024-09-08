@@ -15,10 +15,18 @@ const App = () => {
   const handleInput = (event) => {
     // Prevent page from resetting and wiping out user input
     event.preventDefault()
+    ///Check if name already exist in array. Use .some method to iterate over 'persons' array
+    const personExists = persons.some(person => person.name === newName)
+    // Accept user input if name is not in array
+    if (newName && !personExists){
     // Add the new name to the list of persons
-      setPersons(persons.concat({ name: newName }))
-      // Clear the input field
-      setNewName('') 
+    setPersons(persons.concat({ name: newName }))
+    // Clear the input field
+    setNewName('') 
+    } else if (personExists){
+      // alert user if name is already in the array
+      alert(`${newName} is already added to phonebook`)
+    }
   }
 
   return (
