@@ -2,14 +2,22 @@ import { useState } from 'react'
 
 const App = () => {
   const [persons, setPersons] = useState([
-    { name: 'Arto Hellas' }
+    { name: 'Arto Hellas', number: '040-1234567' }
   ]) 
   const [newName, setNewName] = useState('')
+  const [newNumber, setNewNumber] = useState('')
 
-  //Use event handler to sync changes to input with component state
+
+  //Use event handler to sync changes to input with component state for names
   const handleNameChange = (event) => {
     setNewName(event.target.value)
   }
+
+  //Use event handler to sync changes to input with component state for number
+  const handleNumberChange = (event) => {
+    setNewNumber(event.target.value)
+  }  
+
 
   //Form component for adding notes
   const handleInput = (event) => {
@@ -18,14 +26,20 @@ const App = () => {
     ///Check if name already exist in array. Use .some method to iterate over 'persons' array
     const personExists = persons.some(person => person.name === newName)
     // Accept user input if name is not in array
-    if (newName && !personExists){
-    // Add the new name to the list of persons
-    setPersons(persons.concat({ name: newName }))
-    // Clear the input field
-    setNewName('') 
-    } else if (personExists){
-      // alert user if name is already in the array
-      alert(`${newName} is already added to phonebook`)
+    if (newName && newNumber){
+      if(!personExists){
+        // Add the new name to the list of persons
+        setPersons(persons.concat({ name: newName, number: newNumber }))
+        // Clear the input field
+        setNewName('') 
+        setNewNumber('')
+      } else {
+        // alert user if name is already in the array
+        alert(`${newName} is already added to phonebook`)
+      }
+    } else {
+      // alert user that both names and numbers are needed
+      alert('Both name and number are required')
     }
   }
 
@@ -37,6 +51,9 @@ const App = () => {
           name: <input value={newName} onChange={handleNameChange} />
         </div>
         <div>
+          number: <input value={newNumber} onChange={handleNumberChange} />
+        </div>
+        <div>
           <button type="submit">add</button>
         </div>
       </form>
@@ -44,7 +61,7 @@ const App = () => {
       <ul>
         {/*Use map to render list of names */}
         {persons.map((person, index) => (
-          <li key={index}>{person.name}</li>
+          <li key={index}>{person.name} {person.number}</li>
         ))}
       </ul>
     </div>
