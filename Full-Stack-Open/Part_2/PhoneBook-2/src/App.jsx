@@ -1,12 +1,18 @@
 import { useState } from 'react'
+import Filter from './components/Filter'
+import InputForm from './components/InputForm'
+import PersonList from './components/PersonList'
 
 const App = () => {
   const [persons, setPersons] = useState([
-    { name: 'Arto Hellas', number: '040-1234567' }
-  ]) 
+    { name: 'Arto Hellas', number: '040-123456', id: 1 },
+    { name: 'Ada Lovelace', number: '39-44-5323523', id: 2 },
+    { name: 'Dan Abramov', number: '12-43-234345', id: 3 },
+    { name: 'Mary Poppendieck', number: '39-23-6423122', id: 4 }
+  ])
   const [newName, setNewName] = useState('')
   const [newNumber, setNewNumber] = useState('')
-
+  const [searchName, setSearchName] = useState('')
 
   //Use event handler to sync changes to input with component state for names
   const handleNameChange = (event) => {
@@ -18,6 +24,15 @@ const App = () => {
     setNewNumber(event.target.value)
   }  
 
+  //Use event handler to sync changes to input with component state for search
+  const handleSearchChange = (event) => {
+    setSearchName(event.target.value)
+  }
+
+  // Filter name based on user input. use .toLowerCase to prevent capitalization from being a factor
+  const filteredPersons = persons.filter(person =>
+    person.name.toLowerCase().includes(searchName.toLowerCase())
+  )
 
   //Form component for adding notes
   const handleInput = (event) => {
@@ -46,24 +61,22 @@ const App = () => {
   return (
     <div>
       <h2>Phonebook</h2>
-      <form onSubmit={handleInput}>
-        <div>
-          name: <input value={newName} onChange={handleNameChange} />
-        </div>
-        <div>
-          number: <input value={newNumber} onChange={handleNumberChange} />
-        </div>
-        <div>
-          <button type="submit">add</button>
-        </div>
-      </form>
+      <Filter 
+        searchName={searchName} 
+        handleSearchChange={handleSearchChange} 
+      />
+      <h2>Add new</h2>
+      <InputForm 
+        newName={newName} 
+        newNumber={newNumber} 
+        handleNameChange={handleNameChange} 
+        handleNumberChange={handleNumberChange} 
+        handleInput={handleInput} 
+      />
       <h2>Numbers</h2>
-      <ul>
-        {/*Use map to render list of names */}
-        {persons.map((person, index) => (
-          <li key={index}>{person.name} {person.number}</li>
-        ))}
-      </ul>
+      <PersonList 
+        persons={filteredPersons} 
+      />
     </div>
   )
 }
