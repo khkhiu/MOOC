@@ -1,15 +1,11 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Filter from './components/Filter'
 import InputForm from './components/InputForm'
 import PersonList from './components/PersonList'
 
+
 const App = () => {
-  const [persons, setPersons] = useState([
-    { name: 'Arto Hellas', number: '040-123456', id: 1 },
-    { name: 'Ada Lovelace', number: '39-44-5323523', id: 2 },
-    { name: 'Dan Abramov', number: '12-43-234345', id: 3 },
-    { name: 'Mary Poppendieck', number: '39-23-6423122', id: 4 }
-  ])
+  const [persons, setPersons] = useState([])
   const [newName, setNewName] = useState('')
   const [newNumber, setNewNumber] = useState('')
   const [searchName, setSearchName] = useState('')
@@ -34,6 +30,16 @@ const App = () => {
     person.name.toLowerCase().includes(searchName.toLowerCase())
   )
 
+  // Use useEffect to fetch information for json
+  useEffect(() => {
+    //Send get request to URL
+    fetch('http://localhost:3001/persons')
+      //Converts response to JSON
+      .then(response => response.json())
+      //Update persons with fetched data
+      .then(data => setPersons(data));
+  }, []);
+
   //Form component for adding notes
   const handleInput = (event) => {
     // Prevent page from resetting and wiping out user input
@@ -42,12 +48,38 @@ const App = () => {
     const personExists = persons.some(person => person.name === newName)
     // Accept user input if name is not in array
     if (newName && newNumber){
+      if (!personExists) {
+        // Add the new name to the list of persons
+        const newPerson = { name: newName, number: newNumber };
+        //Send post request to server to add person
+        fetch('http://localhost:3001/persons', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          //Converts newPerson into a JSON string to send in the request body
+          body: JSON.stringify(newPerson),
+        })
+        //Converst response form server into JSON format
+        .then(response => response.json())
+        // OPS for after data is received
+        .then(data => {
+          // Updates state by adding person to list of existing persons
+          setPersons(persons.concat(data));
+          //Clears the input field
+          setNewName('');
+          setNewNumber('');
+        })
+        // Catch errors when fetching data
+        .catch(error => console.error('Error fetching data:', error))
+      /* Old code for reference
       if(!personExists){
         // Add the new name to the list of persons
         setPersons(persons.concat({ name: newName, number: newNumber }))
         // Clear the input field
         setNewName('') 
         setNewNumber('')
+      */
       } else {
         // alert user if name is already in the array
         alert(`${newName} is already added to phonebook`)
