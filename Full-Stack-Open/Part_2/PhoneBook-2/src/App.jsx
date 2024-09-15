@@ -30,6 +30,7 @@ const App = () => {
         setPersons(data)
       })
   }, []);
+
   /*
   useEffect(() => {
     //Send get request to URL
@@ -51,11 +52,12 @@ const App = () => {
       if (!personExists) {
         try {
           const newPerson = { name: newName, number: newNumber };
-          const data = noteService
-          .create(newPerson)
-          .setPersons(persons.concat(data))
-          .setNewName('')
-          .setNewNumber('')
+          noteService.create(newPerson)
+          .then(data => {
+            setPersons(persons.concat(data));
+            setNewName('');
+            setNewNumber('');
+          })
         } catch (error) {
           console.error('Error adding person:', error);
         }
@@ -101,6 +103,17 @@ const App = () => {
     }
   }
 
+  // Component for deleting entires for DB
+  const handleDelete = (id, name) => {
+    window.confirm(`delete ${name}?`);
+      {
+        noteService.remove(id)
+          .then(() => {
+            setPersons(persons.filter(person => person.id !== id));
+          })
+      }
+  };
+
   return (
     <div>
       <h2>Phonebook</h2>
@@ -119,6 +132,7 @@ const App = () => {
       <h2>Numbers</h2>
       <PersonList 
         persons={filteredPersons} 
+        handleDelete={handleDelete} 
       />
     </div>
   )
