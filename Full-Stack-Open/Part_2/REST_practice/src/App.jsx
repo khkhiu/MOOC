@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Note from './components/Note'
+import noteService from './services/notes'
 
 /*usestate FX init state stored in 'notes' with array of notes passed in props */
 /*to star with empty list of notes use: useState([]) */
@@ -7,6 +8,14 @@ const App = (props) => {
   const [notes, setNotes] = useState(props.notes)
   const [newNote, setNewNote] = useState('')
   const [showAll, setShowAll] = useState(true)
+
+  useEffect(() => {
+    noteService      
+      .getAll()      
+      .then(initialNotes => {        
+        setNotes(initialNotes)
+      })  
+    }, [])
 
   //Form component for adding notes
   const addNote = (event) => {
@@ -16,6 +25,13 @@ const App = (props) => {
       important: Math.random() < 0.5,
       id: String(notes.length + 1),
     }
+    noteService      
+      .create(noteObject)      
+      .then(returnedNote => {        
+        setNotes(notes.concat(returnedNote))
+        setNewNote('')      
+    })   
+  /*
   // Use 'axios' to comms with server
   axios
     .post('http://localhost:3001/notes', noteObject)
@@ -24,6 +40,7 @@ const App = (props) => {
       setNewNote('')
       console.log(response)
     })
+  */
   }
 
   //Use event handler to sync changes to input with component state
@@ -39,16 +56,37 @@ const App = (props) => {
 
   //Toggling importance of notes while comms with server
   const toggleImportanceOf = id => {
-    const url = `http://localhost:3001/notes/${id}`
     const note = notes.find(n => n.id === id)
     const changedNote = { ...note, important: !note.important }
-
+  
+    noteService
+      .update(id, changedNote).then(returnedNote => {
+        setNotes(notes.map(note => note.id !== id ? note : returnedNote))
+      })
+  
+      .catch(error => {
+        alert(
+          `the note '${note.content}' was already deleted from server`
+        )
+        setNotes(notes.filter(n => n.id !== id))
+      })
+  }
+    /*
     axios.put(url, changedNote).then(response => {
       // The map method creates a new array by mapping every item from the old array into an item in the new array. 
       setNotes(notes.map(n => n.id !== id ? n : response.data))
     })
-  }
+    */
 
+  const getAll = () => {
+    const request = axios.get(baseUrl)
+    const nonExisting = {
+      id: 10000,
+      content: 'This note is not saved to server',
+      important: true,
+    }
+    return request.then(response => response.data.concat(nonExisting))
+  }
 
   return (
     <div>
