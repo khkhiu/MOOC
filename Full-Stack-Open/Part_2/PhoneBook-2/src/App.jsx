@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Filter from './components/Filter'
 import InputForm from './components/InputForm'
 import PersonList from './components/PersonList'
-
+import noteService from './services/notes'
 
 const App = () => {
   const [persons, setPersons] = useState([])
@@ -11,19 +11,11 @@ const App = () => {
   const [searchName, setSearchName] = useState('')
 
   //Use event handler to sync changes to input with component state for names
-  const handleNameChange = (event) => {
-    setNewName(event.target.value)
-  }
-
+  const handleNameChange = (event) => {setNewName(event.target.value)}
   //Use event handler to sync changes to input with component state for number
-  const handleNumberChange = (event) => {
-    setNewNumber(event.target.value)
-  }  
-
+  const handleNumberChange = (event) => {setNewNumber(event.target.value)}  
   //Use event handler to sync changes to input with component state for search
-  const handleSearchChange = (event) => {
-    setSearchName(event.target.value)
-  }
+  const handleSearchChange = (event) => {setSearchName(event.target.value)}
 
   // Filter name based on user input. use .toLowerCase to prevent capitalization from being a factor
   const filteredPersons = persons.filter(person =>
@@ -32,6 +24,14 @@ const App = () => {
 
   // Use useEffect to fetch information for json
   useEffect(() => {
+    noteService
+      .getAll()
+      .then(data => {
+        setPersons(data)
+      })
+  }, []);
+  /*
+  useEffect(() => {
     //Send get request to URL
     fetch('http://localhost:3001/persons')
       //Converts response to JSON
@@ -39,7 +39,7 @@ const App = () => {
       //Update persons with fetched data
       .then(data => setPersons(data));
   }, []);
-
+  */
   //Form component for adding notes
   const handleInput = (event) => {
     // Prevent page from resetting and wiping out user input
@@ -49,6 +49,17 @@ const App = () => {
     // Accept user input if name is not in array
     if (newName && newNumber){
       if (!personExists) {
+        try {
+          const newPerson = { name: newName, number: newNumber };
+          const data = noteService
+          .create(newPerson)
+          .setPersons(persons.concat(data))
+          .setNewName('')
+          .setNewNumber('')
+        } catch (error) {
+          console.error('Error adding person:', error);
+        }
+        /*
         // Add the new name to the list of persons
         const newPerson = { name: newName, number: newNumber };
         //Send post request to server to add person
@@ -60,7 +71,7 @@ const App = () => {
           //Converts newPerson into a JSON string to send in the request body
           body: JSON.stringify(newPerson),
         })
-        //Converst response form server into JSON format
+        //Convert response form server into JSON format
         .then(response => response.json())
         // OPS for after data is received
         .then(data => {
@@ -72,7 +83,7 @@ const App = () => {
         })
         // Catch errors when fetching data
         .catch(error => console.error('Error fetching data:', error))
-      /* Old code for reference
+      // Old code for reference
       if(!personExists){
         // Add the new name to the list of persons
         setPersons(persons.concat({ name: newName, number: newNumber }))
