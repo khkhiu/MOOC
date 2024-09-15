@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Filter from './components/Filter'
 import InputForm from './components/InputForm'
 import PersonList from './components/PersonList'
+import Notification from './components/Notification'
 import noteService from './services/notes'
 
 const App = () => {
@@ -9,6 +10,8 @@ const App = () => {
   const [newName, setNewName] = useState('')
   const [newNumber, setNewNumber] = useState('')
   const [searchName, setSearchName] = useState('')
+  const [errorMessage, setErrorMessage] = useState(null)
+  const [successMessage, setSuccessMessage] = useState(null)
 
   //Use event handler to sync changes to input with component state for names
   const handleNameChange = (event) => {setNewName(event.target.value)}
@@ -59,8 +62,13 @@ const App = () => {
               setPersons(persons.map(person => person.id !== personExists.id ? person : updatedPerson));
               setNewName('');
               setNewNumber('');
+              setSuccessMessage(`Updated ${newName}'s number successfully`);
+              setTimeout(() => setSuccessMessage(null), 5000);
             })
-            .catch(error => console.error('Error updating person:', error));
+            .catch(error => {
+              setErrorMessage('Error updating person');
+              setTimeout(() => setErrorMessage(null), 5000);
+            })
         }
       } else {
         noteService.create({ name: newName, number: newNumber })
@@ -68,8 +76,13 @@ const App = () => {
             setPersons(persons.concat(newPerson));
             setNewName('');
             setNewNumber('');
+            setSuccessMessage(`Added ${newName} successfully`);
+            setTimeout(() => setSuccessMessage(null), 5000);
           })
-          .catch(error => console.error('Error adding person:', error));
+          .catch(error => {
+            setErrorMessage(`${newName} has already been added to the server`);
+            setTimeout(() => setErrorMessage(null), 5000);
+          });
       }
     /* Old code for reference
     if (newName && newNumber){
@@ -124,7 +137,8 @@ const App = () => {
         */
     } else {
       // alert user that both names and numbers are needed
-      alert('Both name and number are required')
+      setErrorMessage('Both name and number are required');
+      setTimeout(() => setErrorMessage(null), 5000);
     }
   }
 
@@ -135,13 +149,21 @@ const App = () => {
         noteService.remove(id)
           .then(() => {
             setPersons(persons.filter(person => person.id !== id));
+            setSuccessMessage(`Deleted ${name} successfully`);
+            setTimeout(() => setSuccessMessage(null), 5000);
           })
+          .catch(error => {
+            setErrorMessage(`Information of ${name} has already been removed from the server`);
+            setTimeout(() => setErrorMessage(null), 5000);
+          });
       }
   };
 
   return (
     <div>
       <h2>Phonebook</h2>
+      <Notification message={errorMessage} type="error" />
+      <Notification message={successMessage} type="success" />      
       <Filter 
         searchName={searchName} 
         handleSearchChange={handleSearchChange} 
