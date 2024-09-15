@@ -26,9 +26,7 @@ const App = () => {
   useEffect(() => {
     noteService
       .getAll()
-      .then(data => {
-        setPersons(data)
-      })
+      .then(data => {setPersons(data)})
   }, []);
 
   /*
@@ -45,9 +43,35 @@ const App = () => {
   const handleInput = (event) => {
     // Prevent page from resetting and wiping out user input
     event.preventDefault()
-    ///Check if name already exist in array. Use .some method to iterate over 'persons' array
-    const personExists = persons.some(person => person.name === newName)
-    // Accept user input if name is not in array
+    ///Check if name already exist in array. Use .find method to iterate over 'persons' array
+    //.find -> To find and return the first element in the array that satisfies the provided testing function.
+    //The first matching element from the array. If no element matches the criteria, it returns undefined.
+    //.some -> To test if at least one element in the array satisfies the provided testing function.
+    //true if at least one element matches the condition, otherwise false.
+    const personExists = persons.find(person => person.name === newName)
+    if (newName && newNumber) {
+      if (personExists) {
+        const confirmed = window.confirm(`${newName} is already added to phonebook, replace the old number with a new one?`);
+        if (confirmed) {
+          // use update method to update information
+          noteService.update(personExists.id, { ...personExists, number: newNumber })
+            .then(updatedPerson => {
+              setPersons(persons.map(person => person.id !== personExists.id ? person : updatedPerson));
+              setNewName('');
+              setNewNumber('');
+            })
+            .catch(error => console.error('Error updating person:', error));
+        }
+      } else {
+        noteService.create({ name: newName, number: newNumber })
+          .then(newPerson => {
+            setPersons(persons.concat(newPerson));
+            setNewName('');
+            setNewNumber('');
+          })
+          .catch(error => console.error('Error adding person:', error));
+      }
+    /* Old code for reference
     if (newName && newNumber){
       if (!personExists) {
         try {
@@ -61,7 +85,7 @@ const App = () => {
         } catch (error) {
           console.error('Error adding person:', error);
         }
-        /*
+        
         // Add the new name to the list of persons
         const newPerson = { name: newName, number: newNumber };
         //Send post request to server to add person
@@ -92,11 +116,12 @@ const App = () => {
         // Clear the input field
         setNewName('') 
         setNewNumber('')
-      */
+      
       } else {
         // alert user if name is already in the array
         alert(`${newName} is already added to phonebook`)
       }
+        */
     } else {
       // alert user that both names and numbers are needed
       alert('Both name and number are required')
